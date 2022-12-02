@@ -1,0 +1,124 @@
+
+/* START OF CSS CODE FOR SIGN UP AND LOGIN PAGES */
+
+html{
+    background-color: white;
+}
+
+h1,h3,p{
+    padding-left: 20px;
+    font-family: serif;
+    color: white;
+}
+p,li,h4,h5{
+    font-family: sans-serif;
+    color: white;
+}
+
+li{
+    font-size: small;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+#container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    border: 0px;
+    background-color: rgb(36, 34, 34);
+    border-radius: 12px;
+}
+
+
+#subject-list-all{
+    display: flex;
+    flex-direction: row;
+}
+
+
+#social-handle-container{
+    display: flex;
+    flex-direction: row;
+}
+
+svg:hover{
+    transform: rotate(360deg);
+    transition: all 0.3s ease-in-out;
+}
+
+.social-handle{
+    margin: auto;
+    margin-bottom:0px;
+}
+
+#welcome-paragraph,#sub-para{
+    font-size: 14px;
+}
+
+
+#welcome-section{
+    width: 600px;
+    height: fit-content;
+}
+
+input{
+    margin-top: 18px;
+    border: 0px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    height: 25px;
+}
+
+
+[type = "email"],[type = "number"],[type = "password"]{
+    padding-left: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 14px;
+}
+
+::placeholder{
+    font-size: 12px;
+}
+
+
+#submit-btn{
+    align-items: center;
+    margin-left: 40%;
+    font-weight: bold;
+}
+
+#login-btn{
+    text-align: center;
+    text-decoration: none;
+}
+
+#signup-btn{
+    text-decoration:none;
+    color: blue;
+    margin-right: 10px;
+}
+
+
+#pass-visibility{
+    display: flex;
+    flex-direction: row;
+}
+
+/*END OF CSS CODE FOR SIGN UP AND LOGIN */
+
+
+
+@media screen and (max-width: 480px) {
+
+
+    #container ,html,#subject-list-all{width: 350px; height: fit-content;margin-top: 0px;; flex-direction: column;font-size: 8px;overflow-x: hidden;}
+    #signup-section{width: fit-content; margin-left: 12%;}
+    #welcome-paragraph{font-size: 10px;}
+  }
